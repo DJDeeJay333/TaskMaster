@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+
+  <!-- <h3>TaskMaster - The Begginning</h3>   -->
+  
+  <h3 [routerLink] = "['/TaskData']" class="heading">{{getName()}} - The Begginning</h3>  
+
+  <!-- <br> -->
+  <img src="/assets/TaskMasterImages/OG_TaskMaster.jpg" height="200" width="250">
+  <img src="/assets/TaskMasterImages/MCU_TaskMasterVsBlackWidow.jpg" height="300" width="500">
+  <img src="/assets/TaskMasterImages/GregAndAlex.jpg" height="200" width="250">
+  <!-- <br> -->
+  
+  <mat-toolbar color="warn">
+    <mat-toolbar-row>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" color="primary">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <!-- <span><img src="./assets/devglan.png"></span> -->
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav #drawer mode="side" opened role="navigation">
+      <mat-nav-list>
+        <a mat-list-item routerLink='/TaskData'> Task Data </a>
+        <a mat-list-item routerLink='/InputTesting'> Input Testing </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+
+
+  <!-- <task-data></task-data> -->
+  <!-- <input-testing></input-testing> -->
+</body>
+
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<!-- <router-outlet></router-outlet> -->

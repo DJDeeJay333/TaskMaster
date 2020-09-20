@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<head></head>
+<body> -->
+
+  <!-- {{playOpeningTheme()}} -->
+  <!-- <audio id="myAudio" controls autoplay loop> -->
+  <!-- <audio id="myAudio" controls preload = "auto"> -->
+  <!-- <audio id="myAudio" controls autoplay >  
+    <source src="/assets/Audio/Taskmaster.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio> -->
+
+  <!-- Input Tests -->
+  <!-- <button (click)="onClick()"> Click Bait Test </button>
+  <br>
+  <input (keyup) = "onKeyUp($event)">
+  <p> Key Press Data (Refresh to Reset): {{keysPressed.join(',')}}</p>
+  <br>
+  <input (keyup) = "onKeyUp2($event)"> 
+  <p> Key Press Data 2 (Refresh to Reset): {{values.join(',')}} </p> 
+
+  <br>
+  <input #box (keyup) = "null">
+  <p> {{box.value}} </p>
+
+  <br>
+  <input #box2 (keyup.enter) = "onEnter(box2.value)">
+
+  <br><br>
+  <input #box3 (blur) = "update(box3.value)">
+  <p> {{value}} </p> -->
+
+<!-- Testing Directives -->
+
+<!-- <div [ngStyle] = "{background:'yellow'}"> -->
+<div style= "background:'yellow'">
+      {{ appTitle }}  
+</div>
+
+
+<table border="1" align="center" style = "background: 'gray'">
+  <!-- <table border="1" align="center" [ngStyle] = "{background: 'gray'}"> -->
+  <tr>
+    <th> ID</th> <th> Name</th>
+  </tr>
+  <tr *ngFor = 'let lst of appList'>
+    <td> {{lst.ID}} </td>
+    <td> {{lst.Name}} </td>
+  </tr>
+</table>
+
+
+ <!-- </body> -->

@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+.MasterBodyStyle
+{
+    background-image: url("assets/TaskMasterImages/TaskMaster_Letter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: lightskyblue;
+}
+
+.heading
+{
+    color:rgb(9, 164, 236)
+}
+
+*
+{
+    color:darkblue
+}
