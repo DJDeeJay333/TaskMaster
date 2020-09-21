@@ -16,7 +16,7 @@ export class InputTestingComponent implements OnInit {
   
   playOpeningTheme(){
     let audio = new Audio();
-    audio.src = "/assets/Audio/Taskmaster.mp3"
+    audio.src = "assets/Audio/Taskmaster.mp3"
     audio.load();
     audio.play();
   }
